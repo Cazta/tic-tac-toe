@@ -2,14 +2,15 @@
 
 Today we're going to test and improve our coding skills by creating a simple game of Tic-Tac-Toe in Python. 
 
-## Task 1
+## Environment
 
 Fork this repository, clone it on your machine and create a new environment inside the folder. Don't forget to activate it for the assignment. 
 ```
 python -m venv .venv
+source .venv/bin/activate
 ```
 
-## Task 2
+## Task
 
 Write your own Tic-Tac-Toe game. The assignment file contains a description on how the game should work. It may also help you to create a good structure for your code. 
 
