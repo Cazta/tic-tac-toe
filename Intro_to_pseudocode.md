@@ -19,22 +19,24 @@ There is no strict set of standard notations for writing pseudocode and everyone
 
 ### Example 1
 
-This program will allow the user to check whether the number is even or odd.
+Goal: This program will allow the user to check whether the number is even or odd.
 
 ```
-if "1"
-    print response
-        "I am case 1"
+INPUT user inputs number
+STORE user input in number variable
 
-if "2"
-    print response
-        "I am case 2"
+IF number is even THEN
+	OUTPUT "I am even"
+
+ELSE
+    OUTPUT "I am odd"
+
 ```
 
 
 ### Example 2
 
-This program will ask the user for the best subject they take. If it's "Computer Science" it will print "Of course it is!" otherwise "Try again!".
+Goal: This program will ask the user for the best subject they take. If it's "Computer Science" it will print "Of course it is!" otherwise "Try again!".
 
 ```
 REPEAT
