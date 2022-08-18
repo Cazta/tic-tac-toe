@@ -41,7 +41,7 @@ To play a round of tic-tac-toe, we need a game board. We should start by definin
 Maybe like this...  
 1, 2, 3    
 4, 5, 6   
-7, 8, 8   
+7, 8, 9   
 
 or this...   
 (0, 0), (1, 0), (2, 0)   
