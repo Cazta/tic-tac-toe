@@ -9,7 +9,7 @@
 
 # define global variables: '''
 
-game_board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+game_board = ['  ~  ','  ~  ','  ~  ','  ~  ','  ~  ','  ~  ','  ~  ','  ~  ','  ~  ']
 
 player_1 = None
 player_2 = None
@@ -22,6 +22,12 @@ game_active = True
 # Commandline to start the Game from terminal?
 
 '''
+def start_function():
+     print('How about a round of Tic-Tac-Toe?')
+     start = input('Hit any key to start.')
+     if start != None:
+          global game_active
+          game_active == True
 
 '''
 **************************** Greeting, and chose symbol player 1, assign symbol player 2 **************************************
@@ -39,7 +45,7 @@ def start_func():
                 # print("Player 1 chose X or O and Player 2 chose O or X, Now the Game begins, get ready!")
 
 '''
-def start_func():
+def symbol_func():
     print("Welcome to a new round of Tic Tac Toe")
     global player_1 
     player_1 = (input("Player 1 Please choose your Symbol, X or O: "))
@@ -66,6 +72,13 @@ def start_func():
         # print line 3 = game_board[2]
 
         # print('help')'''
+
+def print_game_board(game_board):
+    print(' | ' + game_board[0] + ' | ' + game_board[1] + ' | ' + game_board[2] + ' | ' )
+    print('---------------------------')
+    print(' | ' + game_board[3] + ' | ' + game_board[4] + ' | ' + game_board[5] + ' | ' )
+    print('---------------------------')
+    print(' | ' + game_board[6] + ' | ' + game_board[7] + ' | ' + game_board[8] + ' | ' )
 
 
 ***************************** move player 1 *************************************        
