@@ -100,17 +100,17 @@ def check_win(game_board, active_player):
     if game_board[0] == game_board[1] == game_board[2] == active_player or game_board[3] == game_board[4] == game_board[5] == active_player or game_board[6] == game_board[7] == game_board[8] == active_player:
         win = 1
         print()
-        print(f'{active_player} won!')
+        print(Fore.CYAN + f'{active_player} won!')
     #check win vertical
     elif game_board[0] == game_board[3] == game_board[6] == active_player or game_board[1] == game_board[4] == game_board[7] == active_player or game_board[2] == game_board[5] == game_board[8] == active_player: 
         win = 1
         print()
-        print(f'{active_player} won!')
+        print(Fore.CYAN + f'{active_player} won!')
     #check win diagonal
     elif game_board[0] == game_board[4] == game_board[8] == active_player or game_board[2] == game_board[4] == game_board[6] == active_player:
         win = 1
         print()
-        print(f'{active_player} won!')
+        print(Fore.CYAN + f'{active_player} won!')
     else:
         win = 0  
     return win
@@ -126,7 +126,7 @@ def check_draw(game_board):
         draw = 0
     if draw == 1:
         print()
-        print("It's a Draw! Try another round!")
+        print("'\033[31m' + It's a Draw! Try another round!")
         print()
     return draw
 
@@ -157,7 +157,7 @@ def play_game():
         check_draw(game_board)
         if win == 1:
             game_active = False
-            print('Thank you for playing!')
+            print('\033[31m' + 'Thank you for playing!')
         elif draw == 1:
             game_active = False
         else:
