@@ -117,8 +117,20 @@ def play_game():
         if win == 1:
             game_active = False
             print('Thank you for playing!')
+            if (input("Do you want to play another round? Type 'yes' or 'no' ")) == 'yes':
+                play_game()
+                continue
+            elif (input) == 'no':
+                print('Goodbye!')
+                break
         elif draw == 1:
             game_active = False
+            if (input("Do you want to play another round? Type 'yes' or 'no' ")) == 'yes':
+                play_game()
+                continue
+            elif (input) == 'no':
+                print('Goodbye!')
+                break
         else:
             switch_active_player()
 
